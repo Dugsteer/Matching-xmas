@@ -100,7 +100,7 @@
     }
 
     &__text h1 {
-        color: $color-blue;
+        color: $color-xmas-red;
     }
     &__choices {
         display: flex;
@@ -113,7 +113,7 @@
         }
       }
       &__set {
-        background-color: $color-fred;
+        background-color: $color-xmas-green;
         height: 30px;
         width: 50px;
         border-radius: 8px;
@@ -138,7 +138,8 @@
 }
 
 .setlist {
-    color: $color-blue;
+    color: $color-xmas-red;
+    text-align: center;
 }
 
 

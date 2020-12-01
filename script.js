@@ -4,131 +4,115 @@ const loader = document.getElementById("loaderDiv");
 const extra = document.getElementById("info");
 const orange = document.getElementById("orange");
 const blue = window.matchMedia("(max-width: 800px)");
-const nextpic = document.getElementById('nextpic');
-const mainpic = document.getElementById('mainpic');
-const lastpic = document.getElementById('lastpic');
-const thirdpic = document.getElementById('thirdpic');
+const nextpic = document.getElementById("nextpic");
+const mainpic = document.getElementById("mainpic");
+const lastpic = document.getElementById("lastpic");
+const thirdpic = document.getElementById("thirdpic");
 
 //Change Intropic
 //switch introduction pic
 function switchpic() {
   switch (mainpic.innerHTML) {
-    case '<img src="img/mainpic/diver.png" alt="decorative">':
-      mainpic.innerHTML =
-        '<img src="img/mainpic/clown.png" alt="decorative">';
-        mainpic.style.backgroundColor = "red";
+    case '<img src="img/santa.svg" alt="decorative">':
+      mainpic.innerHTML = '<img src="img/star.svg" alt="decorative">';
+      mainpic.style.backgroundColor = "#ff0000";
       break;
-    case '<img src="img/mainpic/clown.png" alt="decorative">':
-      mainpic.innerHTML =
-        '<img src="img/mainpic/cowgirl.png" alt="decorative">';
-        mainpic.style.backgroundColor = "green";
-              break;
-    case '<img src="img/mainpic/cowgirl.png" alt="decorative">':
-      mainpic.innerHTML =
-        '<img src="img/mainpic/astronaut.png" alt="decorative">';
-        mainpic.style.backgroundColor = "black";
+    case '<img src="img/star.svg" alt="decorative">':
+      mainpic.innerHTML = '<img src="img/reindeer.svg" alt="decorative">';
+      mainpic.style.backgroundColor = "#74d680";
       break;
-    case '<img src="img/mainpic/astronaut.png" alt="decorative">':
-      mainpic.innerHTML =
-        '<img src="img/mainpic/wizard.png" alt="decorative">';
-        mainpic.style.backgroundColor = "yellow";
+    case '<img src="img/reindeer.svg" alt="decorative">':
+      mainpic.innerHTML = '<img src="img/elf.svg" alt="decorative">';
+      mainpic.style.backgroundColor = "#ffe164";
       break;
-    case '<img src="img/mainpic/wizard.png" alt="decorative">':
-      mainpic.innerHTML =
-        '<img src="img/mainpic/diver.png" alt="decorative">';
-        mainpic.style.backgroundColor = "blue";
+    case '<img src="img/elf.svg" alt="decorative">':
+      mainpic.innerHTML = '<img src="img/choir.svg" alt="decorative">';
+      mainpic.style.backgroundColor = "black";
+      break;
+    case '<img src="img/choir.svg" alt="decorative">':
+      mainpic.innerHTML = '<img src="img/santa.svg" alt="decorative">';
+      mainpic.style.backgroundColor = "#ff0000";
       break;
     default:
-      mainpic.innerHTML =
-        '<img src="img/mainpic/cowgirl.png" alt="decorative">'
-        mainpic.style.backgroundColor = "yellow";
-
+      mainpic.innerHTML = '<img src="img/santa.svg" alt="decorative">';
+      mainpic.style.backgroundColor = "#ffe164";
   }
+
   switch (nextpic.innerHTML) {
-    case '<img src="img/mainpic/clown.png" alt="decorative">':
-      nextpic.innerHTML =
-        '<img src="img/mainpic/cowgirl.png" alt="decorative">';
-        nextpic.style.backgroundColor = "green";
+    case '<img src="img/star.svg" alt="decorative">':
+      nextpic.innerHTML = '<img src="img/reindeer.svg" alt="decorative">';
+      nextpic.style.backgroundColor = "#74d680";
       break;
-    case '<img src="img/mainpic/cowgirl.png" alt="decorative">':
-      nextpic.innerHTML =
-        '<img src="img/mainpic/astronaut.png" alt="decorative">';
-        mainpic.style.backgroundColor = "black";
+    case '<img src="img/reindeer.svg" alt="decorative">':
+      nextpic.innerHTML = '<img src="img/elf.svg" alt="decorative">';
+      mainpic.style.backgroundColor = "black";
       break;
-    case '<img src="img/mainpic/astronaut.png" alt="decorative">':
-      nextpic.innerHTML =
-        '<img src="img/mainpic/wizard.png" alt="decorative">';
-        nextpic.style.backgroundColor = "yellow";
+    case '<img src="img/elf.svg" alt="decorative">':
+      nextpic.innerHTML = '<img src="img/choir.svg" alt="decorative">';
+      nextpic.style.backgroundColor = "#ff0000";
       break;
-    case '<img src="img/mainpic/wizard.png" alt="decorative">':
-      nextpic.innerHTML =
-        '<img src="img/mainpic/diver.png" alt="decorative">';
-        nextpic.style.backgroundColor = "blue";
+    case '<img src="img/choir.svg" alt="decorative">':
+      nextpic.innerHTML = '<img src="img/santa.svg" alt="decorative">';
+      nextpic.style.backgroundColor = "#ffe164";
+      break;
+    case '<img src="img/santa.svg" alt="decorative">':
+      nextpic.innerHTML = '<img src="img/star.svg" alt="decorative">';
+      nextpic.style.backgroundColor = "#74d680";
       break;
     default:
-      nextpic.innerHTML =
-        '<img src="img/mainpic/clown.png" alt="decorative">';
-        nextpic.style.backgroundColor = "red";
+      nextpic.innerHTML = '<img src="img/star.svg" alt="decorative">';
+      nextpic.style.backgroundColor = "black";
   }
   switch (lastpic.innerHTML) {
-    case '<img src="img/mainpic/astronaut.png" alt="decorative">':
-      lastpic.innerHTML =
-        '<img src="img/mainpic/wizard.png" alt="decorative">';
-        lastpic.style.backgroundColor = "yellow";
+    case '<img src="img/reindeer.svg" alt="decorative">':
+      lastpic.innerHTML = '<img src="img/elf.svg" alt="decorative">';
+      lastpic.style.backgroundColor = "#ff0000";
       break;
-    case '<img src="img/mainpic/wizard.png" alt="decorative">':
-      lastpic.innerHTML =
-        '<img src="img/mainpic/diver.png" alt="decorative">';
-        lastpic.style.backgroundColor = "blue";
+    case '<img src="img/elf.svg" alt="decorative">':
+      lastpic.innerHTML = '<img src="img/choir.svg" alt="decorative">';
+      lastpic.style.backgroundColor = "#ffe164";
       break;
-    case '<img src="img/mainpic/diver.png" alt="decorative">':
-      lastpic.innerHTML =
-        '<img src="img/mainpic/clown.png" alt="decorative">';
-        lastpic.style.backgroundColor = "red";
+    case '<img src="img/choir.svg" alt="decorative">':
+      lastpic.innerHTML = '<img src="img/santa.svg" alt="decorative">';
+      lastpic.style.backgroundColor = "#74d680";
       break;
-    case '<img src="img/mainpic/clown.png" alt="decorative">':
-      lastpic.innerHTML =
-        '<img src="img/mainpic/cowgirl.png" alt="decorative">';
-        lastpic.style.backgroundColor = "green";
+    case '<img src="img/santa.svg" alt="decorative">':
+      lastpic.innerHTML = '<img src="img/star.svg" alt="decorative">';
+      lastpic.style.backgroundColor = "black";
+      break;
+    case '<img src="img/star.svg" alt="decorative">':
+      lastpic.innerHTML = '<img src="img/reindeer.svg" alt="decorative">';
+      lastpic.style.backgroundColor = "#ff0000";
       break;
     default:
-      lastpic.innerHTML =
-        '<img src="img/mainpic/astronaut.png" alt="decorative">';
-        lastpic.style.backgroundColor = "black";
+      lastpic.innerHTML = '<img src="img/reindeer.svg" alt="decorative">';
+      lastpic.style.backgroundColor = "#ffe164";
   }
   switch (thirdpic.innerHTML) {
-    case '<img src="img/mainpic/cowgirl.png" alt="decorative">':
-      thirdpic.innerHTML =
-        '<img src="img/mainpic/astronaut.png" alt="decorative">';
-        thirdpic.style.backgroundColor = "black";
+    case '<img src="img/elf.svg" alt="decorative">':
+      thirdpic.innerHTML = '<img src="img/choir.svg" alt="decorative">';
+      thirdpic.style.backgroundColor = "#74d680";
       break;
-    case '<img src="img/mainpic/astronaut.png" alt="decorative">':
-      thirdpic.innerHTML =
-        '<img src="img/mainpic/wizard.png" alt="decorative">';
-        thirdpic.style.backgroundColor = "yellow";
+    case '<img src="img/choir.svg" alt="decorative">':
+      thirdpic.innerHTML = '<img src="img/santa.svg" alt="decorative">';
+      thirdpic.style.backgroundColor = "black";
       break;
-    case '<img src="img/mainpic/wizard.png" alt="decorative">':
-      thirdpic.innerHTML =
-        '<img src="img/mainpic/diver.png" alt="decorative">';
-        thirdpic.style.backgroundColor = "blue";
+    case '<img src="img/santa.svg" alt="decorative">':
+      thirdpic.innerHTML = '<img src="img/star.svg" alt="decorative">';
+      thirdpic.style.backgroundColor = "#ff0000";
       break;
-    case '<img src="img/mainpic/diver.png" alt="decorative">':
-      thirdpic.innerHTML =
-        '<img src="img/mainpic/clown.png" alt="decorative">';
-        thirdpic.style.backgroundColor = "red";
+    case '<img src="img/star.svg" alt="decorative">':
+      thirdpic.innerHTML = '<img src="img/reindeer.svg" alt="decorative">';
+      thirdpic.style.backgroundColor = "#ffc164";
       break;
-    case '<img src="img/mainpic/clown.png" alt="decorative">':
-      thirdpic.innerHTML =
-        '<img src="img/mainpic/cowgirl.png" alt="decorative">';
-        thirdpic.style.backgroundColor = "green";
+    case '<img src="img/reindeer.svg" alt="decorative">':
+      thirdpic.innerHTML = '<img src="img/elf.svg" alt="decorative">';
+      thirdpic.style.backgroundColor = "#74d680";
       break;
     default:
-      thirdpic.innerHTML =
-        '<img src="img/mainpic/cowgirl.png" alt="decorative">';
-        thirdpic.style.backgroundColor = "green";
+      thirdpic.innerHTML = '<img src="img/elf.svg" alt="decorative">';
+      thirdpic.style.backgroundColor = "black";
   }
-
-
 }
 setInterval(switchpic, 600);
 
@@ -139,15 +123,12 @@ function clapping() {
   claps.play();
 }
 
-
 //Make sound of balloon
 
 function balloonRise() {
   const balloonSound = new Audio("sounds/rise.mp3");
   balloonSound.play();
 }
-
-
 
 // Show and hide about info
 function show() {
@@ -198,129 +179,130 @@ const sideBar = document.getElementById("sidebar");
 // Each image and word in a set array has the same data-framework number, in order to check for pairs.
 // The data-name is a string, which can be used in the second case as innerHTML.
 const set1 = [
-  { number: "1", name: "actor" },
+  { number: "1", name: "angel" },
   {
     number: "1",
-    name: "<img src = 'img/actor.svg' alt='actor' class='image'>",
+    name: "<img src = 'img/angel.svg' alt='angel' class='image'>",
   },
-  { number: "2", name: "artist" },
+  { number: "2", name: "bell" },
   {
     number: "2",
-    name: "<img src = 'img/artist.svg' alt='artist' class='image'>",
+    name: "<img src = 'img/bell.svg' alt='bell' class='image'>",
   },
-  { number: "3", name: "astronaut" },
+  { number: "3", name: "candle" },
   {
     number: "3",
-    name: "<img src = 'img/astronaut.svg' alt='astronaut' class='image'>",
+    name: "<img src = 'img/candle.svg' alt='candle' class='image'>",
   },
-  { number: "4", name: "builder" },
+  { number: "4", name: "candy cane" },
   {
     number: "4",
-    name: "<img src = 'img/builder.svg' alt='builder' class='image'>",
+    name: "<img src = 'img/candy-cane.svg' alt='candy-cane' class='image'>",
   },
-  { number: "5", name: "chef" },
+  { number: "5", name: "carollers" },
   {
     number: "5",
-    name: "<img src = 'img/chef.svg' alt='chef' class='image'>",
+    name: "<img src = 'img/choir.svg' alt='carol singers' class='image'>",
   },
-  { number: "6", name: "dancer" },
+  { number: "6", name: "card" },
   {
     number: "6",
-    name: "<img src = 'img/dancer.svg' alt='dancer' class='image'>",
+    name:
+      "<img src = 'img/christmas-card.svg' alt='christmas-card' class='image'>",
   },
-  { number: "7", name: "doctor" },
+  { number: "7", name: "wreath" },
   {
     number: "7",
-    name: "<img src = 'img/doctor.svg' alt='doctor' class='image'>",
+    name: "<img src = 'img/christmas-wreath.svg' alt='wreath' class='image'>",
   },
-  { number: "8", name: "farmer" },
+  { number: "8", name: "decorations" },
   {
     number: "8",
-    name: "<img src = 'img/farmer.svg' alt='farmer' class='image'>",
+    name: "<img src = 'img/decoration.svg' alt='decorations' class='image'>",
   },
 ];
 const set2 = [
-  { number: "9", name: "firefighter" },
+  { number: "9", name: "elf" },
   {
     number: "9",
-    name: "<img src = 'img/firefighter.svg' alt='firefighter' class='image'>",
+    name: "<img src = 'img/elf.svg' alt='elf' class='image'>",
   },
-  { number: "10", name: "footballer" },
+  { number: "10", name: "hat" },
   {
     number: "10",
-    name: "<img src = 'img/footballer.svg' alt='footballer' class='image'>",
+    name: "<img src = 'img/hat.svg' alt='hat' class='image'>",
   },
-  { number: "11", name: "hairdresser" },
+  { number: "11", name: "holly" },
   {
     number: "11",
-    name: "<img src = 'img/hairdresser.svg' alt='hairdresser' class='image'>",
+    name: "<img src = 'img/holly.svg' alt='holly' class='image'>",
   },
-  { number: "12", name: "mechanic" },
+  { number: "12", name: "lights" },
   {
     number: "12",
-    name: "<img src = 'img/mechanic.svg' alt='mechanic' class='image'>",
+    name: "<img src = 'img/lights.svg' alt='lights' class='image'>",
   },
-  { number: "13", name: "musician" },
+  { number: "13", name: "present" },
   {
     number: "13",
-    name: "<img src = 'img/musician.svg' alt='musician' class='image'>",
+    name: "<img src = 'img/present.svg' alt='present' class='image'>",
   },
-  { number: "14", name: "photographer" },
+  { number: "14", name: "reindeer" },
   {
     number: "14",
-    name: "<img src = 'img/photographer.svg' alt='photographer' class='image'>",
+    name: "<img src = 'img/reindeer.svg' alt='reindeer' class='image'>",
   },
-  { number: "15", name: "pilot" },
+  { number: "15", name: "sack" },
   {
     number: "15",
-    name: "<img src = 'img/pilot.svg' alt='pilot' class='image'>",
+    name: "<img src = 'img/sack.svg' alt='sack' class='image'>",
   },
-  { number: "16", name: "police-officer" },
+  { number: "16", name: "santa" },
   {
     number: "16",
-    name: "<img src = 'img/police-officer.svg' alt='police-officer' class='image'>",
+    name: "<img src = 'img/santa.svg' alt='santa' class='image'>",
   },
 ];
 const set3 = [
-  { number: "17", name: "reporter" },
+  { number: "17", name: "skiing" },
   {
     number: "17",
-    name: "<img src = 'img/reporter.svg' alt='reporter' class='image'>",
+    name: "<img src = 'img/skiing.svg' alt='skiing' class='image'>",
   },
-  { number: "18", name: "singer" },
+  { number: "18", name: "sleigh" },
   {
     number: "18",
-    name: "<img src = 'img/singer.svg' alt='singer' class='image'>",
+    name: "<img src = 'img/sleigh.svg' alt='sleigh' class='image'>",
   },
-  { number: "19", name: "soldier" },
+  { number: "19", name: "snowball" },
   {
     number: "19",
-    name: "<img src = 'img/soldier.svg' alt='soldier' class='image'>",
+    name: "<img src = 'img/snowball-fight.svg' alt='snowball' class='image'>",
   },
-  { number: "20", name: "taxi-driver" },
+  { number: "20", name: "snowflake" },
   {
     number: "20",
-    name: "<img src = 'img/taxi-driver.svg' alt='taxi-driver' class='image'>",
+    name: "<img src = 'img/snowflake.svg' alt='snowflake' class='image'>",
   },
-  { number: "21", name: "teacher" },
+  { number: "21", name: "snowman" },
   {
     number: "21",
-    name: "<img src = 'img/teacher.svg' alt='teacher' class='image'>",
+    name: "<img src = 'img/snowman.svg' alt='snowman' class='image'>",
   },
-  { number: "22", name: "thief" },
+  { number: "22", name: "star" },
   {
     number: "22",
-    name: "<img src = 'img/thief.svg' alt='thief' class='image'>",
+    name: "<img src = 'img/star.svg' alt='star' class='image'>",
   },
-  { number: "23", name: "vet" },
+  { number: "23", name: "stocking" },
   {
     number: "23",
-    name: "<img src = 'img/vet.svg' alt='vet' class='image'>",
+    name: "<img src = 'img/stocking.svg' alt='stocking' class='image'>",
   },
-  { number: "24", name: "waiter" },
+  { number: "24", name: "kings" },
   {
     number: "24",
-    name: "<img src = 'img/waiter.svg' alt='waiter' class='image'>",
+    name: "<img src = 'img/three-kings.svg' alt='kings' class='image'>",
   },
 ];
 
@@ -331,21 +313,21 @@ playGame(set1);
 firstSet.addEventListener("click", () => {
   startLoader();
   gameContainer.innerHTML = "";
-  pageTitle.textContent = "JOBS MATCH: SET 1";
+  pageTitle.textContent = "CHRISTMAS MATCH: SET 1";
   playGame(set1);
 });
 
 secondSet.addEventListener("click", () => {
   startLoader();
   gameContainer.innerHTML = "";
-  pageTitle.textContent = "JOBS MATCH: SET 2";
+  pageTitle.textContent = "CHRISTMAS MATCH: SET 2";
   playGame(set2);
 });
 
 thirdSet.addEventListener("click", () => {
   startLoader();
   gameContainer.innerHTML = "";
-  pageTitle.textContent = "JOBS MATCH: SET 3";
+  pageTitle.textContent = "CHRISTMAS MATCH: SET 3";
 
   playGame(set3);
 });
@@ -371,7 +353,7 @@ function playGame(array) {
     card.classList.add("card");
     //  Include the data-famework (data.number) of the cards so they can be checked plus the necessary HTML.
 
-    card.innerHTML = `<div class="memory-card" tabindex=0 data-framework="${data.number}"><div class="front-face">${data.name}</div><div class="back-face"><img src = "img/search-job.png" alt="picture of a car" class="imgBg smaller" id="imgBg"></div></div>`;
+    card.innerHTML = `<div class="memory-card" tabindex=0 data-framework="${data.number}"><div class="front-face">${data.name}</div><div class="back-face"><img src = "img/reindeer.png" alt="picture of a reindeer" class="imgBg smaller" id="imgBg"></div></div>`;
 
     // Append the card divs to the game container so they appear on the page.
     gameContainer.appendChild(card);
