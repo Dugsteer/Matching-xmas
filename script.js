@@ -114,7 +114,7 @@ function switchpic() {
       thirdpic.style.backgroundColor = "black";
   }
 }
-setInterval(switchpic, 600);
+setInterval(switchpic, 1000);
 
 //Play applause
 
